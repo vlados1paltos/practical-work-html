@@ -1,0 +1,313 @@
+<!-- 
+ Создал пустой файл index.html и классическую структуру страницы с помощью плагина emmet.
+ Далее создал все необходимые разделы для семантической верстки с использованием тегов - header, main, footer. 
+ -->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical work</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        
+        <!-- 
+        Создал div с классом container в header при помощи записи вида - div.container(emmet в помощь).
+        -->
+        <div class="container">
+
+            <!-- 
+            Создал на следующей строке div с классом header-container.
+            -->
+            <div class="header-container">
+
+                <!-- 
+                Создал логотип. Помимо битой ссылки(Журнал), для разнообразия добавил взятый на просторах интернета логотип. 
+                -->
+                <a href="#" class="logo">Журнал
+                    <img src="./assets/images/icons/icon.png" alt="Логотип" class="logo-icon" width="40">
+                </a>
+
+                <!-- 
+                Далее верстал практическую работу отталкиваясь от спикера в видео к уроку.
+                В элементы созданного списка вакансий вложил ссылки на сохраненные изображения.
+                Так же сами изображения залил в репозиторий git.
+                Заполнил все семантические блоки, проверил якорные ссылки и соответствие с образцом макета в целом.
+                -->
+            </div>
+
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#vac" class="menu__link">Вакансии</a></li>
+                    <li class="menu__item"><a href="#usl" class="menu__link">Условия</a></li>
+                    <li class="menu__item"><a href="#trb" class="menu__link">Требования</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__action">
+                <a href="#zay" class="button">Подать заявку</a>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1 class="hero__title">Стажировка в одной из лучших IT-компаний России</h1>
+        </section>
+
+        <section class="vacancies" id="vac">
+            <h2 class="vacancies__title">Вакансии</h2>
+
+            <ul class="vacancies__list">
+                <li class="vacancies__item">
+                    <a href="./assets/images/Front-end-Development.jpeg" class="vacancies__link">Frontend</a>
+                </li>
+                <li class="vacancies__item">
+                    <a href="./assets/images/backend-development.webp" class="vacancies__link">Backend</a>
+                </li>
+                <li class="vacancies__item">
+                    <a href="./assets/images/mobile.jpg" class="vacancies__link">Мобильная разработка</a>
+                </li>
+                <li class="vacancies__item">
+                    <a href="./assets/images/Devops.png" class="vacancies__link">DevOps</a>
+                </li>
+                <li class="vacancies__item">
+                    <a href="./assets/images/Data-Analyst.jpg" class="vacancies__link">Анализ данных</a>
+                </li>
+                <li class="vacancies__item">
+                    <a href="./assets/images/ml-engineer.jpg" class="vacancies__link">Машинное обучение</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="conditions" id="usl">
+            <h2 class="conditions__title">Условия</h2>
+
+            <table class="conditions__table">
+                <thead class="conditions__thead">
+                    <tr class="conditions__row">
+                        <th class="conditions__heading"></th>
+                        <th class="conditions__heading">Стажировка в течение года</th>
+                        <th class="conditions__heading">Стажировка летняя</th>
+                        <th class="conditions__heading">Погружение: интенсивная стажировка</th>
+                    </tr>
+                </thead>
+
+                <tbody class="conditions__tbody">
+                    <tr class="conditions__row">
+                        <th class="conditions__heading">Формат работы</th>
+                        <td class="conditions__cell">✔ Очно или дистанционно</td>
+                        <td class="conditions__cell">✔ Очно</td>
+                        <td class="conditions__cell"></td>
+                    </tr>
+
+                    <tr class="conditions__row">
+                        <th class="conditions__heading">Дата начала</th>
+                        <td class="conditions__cell">✔ Каждый месяц</td>
+                        <td class="conditions__cell">✔ Май</td>
+                        <td class="conditions__cell">✔ Февраль, Август</td>
+                    </tr>
+
+                    <tr class="conditions__row">
+                        <th class="conditions__heading">Оплата проезда</th>
+                        <td class="conditions__cell">✔ Да</td>
+                        <td class="conditions__cell"></td>
+                        <td class="conditions__cell"></td>
+                    </tr>
+
+                    <tr class="conditions__row">
+                        <th class="conditions__heading">Оплата проживания</th>
+                        <td class="conditions__cell">✕ Нет</td>
+                        <td class="conditions__cell">✔ Да</td>
+                        <td class="conditions__cell"></td>
+                    </tr>
+
+                    <tr class="conditions__row">
+                        <th class="conditions__heading">Занятость</th>
+                        <td class="conditions__cell">✔ Гибкий график от 20 до 40 часов в неделю</td>
+                        <td class="conditions__cell">✔ Полная 5/2</td>
+                        <td class="conditions__cell"></td>
+                    </tr>
+
+                    <tr class="conditions__row">
+                        <th class="conditions__heading">Продолжительность</th>
+                        <td class="conditions__cell">✔ от 3 до 6 месяцев</td>
+                        <td class="conditions__cell">✔ 3 месяца</td>
+                        <td class="conditions__cell">✔ 1 месяц</td>
+                    </tr>
+                </tbody>
+
+                <tfoot class="conditions__tfoot">
+                    <tr class="conditions__row">
+                        <th class="conditions__heading">Оплата</th>
+                        <td class="conditions__cell">до 50 000 ₽</td>
+                        <td class="conditions__cell">до 100 000 ₽</td>
+                        <td class="conditions__cell"></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section class="requirements" id="trb">
+            <h2 class="requirements__title">Требования</h2>
+
+            <p class="requirements__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea dicta ullam consequatur dolores molestiae deleniti quia exercitationem id officiis natus? Suscipit fugit quia officia aliquid ex quasi quisquam molestias 
+
+                <strong class="requirements__accent">
+                    optio repellendus laborum distinctio maxime
+                </strong> 
+
+            eius, debitis ab consectetur, voluptatibus odio! Nobis deserunt velit 
+
+                <a class="requirements__link" href="#">
+                    laudantium
+                </a>
+
+            alias odit autem dolores sit aliquid eveniet dolore eos quas, tempora culpa quasi repellat saepe? Amet, nobis. Officiis rem distinctio quaerat! 
+            
+                <em class="requirements__italic">
+                    Obcaecati aperiam beatae provident enim delectus aliquid reiciendis
+                </em>
+            
+            nemo inventore aut repellendus sit vitae harum debitis accusamus aliquam similique quisquam corporis blanditiis, ex possimus ratione odit atque! Maiores ex reiciendis autem nesciunt sed voluptas ipsum?
+        </p>
+        </section>
+
+        <section class="application" id="zay">
+            <h2 class="application__title">Подать заявку</h2>
+
+            <form action="" method="get" class="application__form">
+
+                <label for="city" class="application__label">
+                    Ваш город
+                </label>
+
+                <select name="city" id="city" class="application__select">
+                    <option value="">--Выберите город--</option>
+                    <option value="moscow">Москва</option>
+                    <option value="saintpetersburg">Санкт-Петербург</option>
+                    <option value="kazan">Казань</option>
+                    <option value="nnovgorod">Нижний Новгород</option>
+                </select>
+
+                <label for="napr" class="application__label">
+                    Направление
+                </label>
+
+                <select name="napr" id="napr" class="application__select">
+                    <option value="">--Выберите направление--</option>
+                    <option value="Frontend">Frontend</option>
+                    <option value="Backend">Backend</option>
+                    <option value="Мобильная разработка">Мобильная разработка</option>
+                    <option value="DevOps">DevOps</option>
+                    <option value="Анализ данных">Анализ данных</option>
+                    <option value="Машинное обучение">Машинное обучение</option>
+                </select>
+
+                <label for="name" class="application__label">
+                    Имя
+                </label>
+
+                <input type="text" id="name" class="application__input" required>
+
+                <label for="surname" class="application__label">
+                    Фамилия
+                </label>
+
+                <input type="text" id="surname" class="application__input" required>
+
+                <label for="mail" class="application__label">
+                    Email
+                </label>
+
+                <input type="email" id="mail" class="application__input" required>
+
+                <label for="tel" class="application__label">
+                    Телефон
+                </label>
+
+                <input type="tel" id="tel" class="application__input" required>
+
+                <label for="education" class="application__label">
+                    Уровень вашего образования
+                </label>
+
+                <fieldset class="application__fieldset">
+
+                    <label class="application__checkbox-label">
+                        <input type="checkbox" value="Среднее общее" class="application__checkbox">
+                        Среднее общее
+                    </label>
+
+                    <label class="application__checkbox-label">
+                        <input type="checkbox" value="Среднее профессиональное" class="application__checkbox">
+                        Среднее профессиональное
+                    </label>
+
+                    <label class="application__checkbox-label">
+                        <input type="checkbox" value="Высшее" class="application__checkbox">
+                        Высшее
+                    </label>
+
+                </fieldset>
+
+                <label for="social" class="application__label">
+                    Ссылка на соц. сети
+                </label>
+
+                <input type="url" id="social" class="application__input" required>
+
+                <label for="desc" class="application__label">
+                    Ваш опыт
+                </label>
+
+                <textarea
+                    name="desc"
+                    autocomplete="off"
+                    id="desc"
+                    cols="30"
+                    rows="10"
+                    placeholder="Расскажите о себе"
+                    class="application__textarea"
+                ></textarea>
+
+                <div class="application__actions">
+                    <button type="reset" class="application__button">
+                        Сбросить
+                    </button>
+
+                    <button type="submit" class="application__button application__button--submit">
+                        Отправить
+                    </button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container row">
+
+            <div class="logo">
+                Стажировки в <strong>IT</strong>
+            </div>
+
+            <p class="footer-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Nisi aliquid totam excepturi placeat.
+                Mollitia, amet odit error exercitationem ullam quisquam,
+                voluptatem quis laboriosam quia dolores pariatur,
+                dignissimos totam id eius!
+            </p>
+
+        </div>
+    </footer>
+
+</body>
+</html>
